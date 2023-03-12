@@ -6,7 +6,16 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword () {
   console.log("Click clack gurl");
 
+  // PS 1 - prompt user with series re: criteria
+  // PS 1.1 - prompt user with length 8-128
+  // PS 1.2 - prompt user with lower, upper, special 
+  // PS 2 - validate input
+  // PS 3 - generate password
+  
+
   return "Password TBD"
+  // PS 4 - display  password on page. already done, with return line
+  // shows that the event is connect and working. at the very end, need to return something, store generated passwork into a variable and return that. 
   }
 
 // Write password to the #password input. 
