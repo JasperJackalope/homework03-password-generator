@@ -19,31 +19,40 @@ generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input. 
 function writePassword() {
-  var password = generatePassword();
+  var truePrompts = promptAlert();
   var passwordText = document.querySelector("#password");
-
-
-  passwordText.value = password;
+  if (truePrompts){
+    var passwordNew = generatePassword();
+    passwordText.value = passwordNew;
+  } else {
+    passwordText.value = "";
+  }
+  
   // takes value of generated password and displays it on screen
 
 }
 
 function generatePassword () {
   console.log("Click clack gurl");
+  var password = "";
+  for(var i = 0; i < characterLength; i++){
+     var randomCharacter = math.floor(math.random() * choiceArray.length);
+     password = password + choiceArray[randomCharacter];
+  }
+  return password;
 
   // PS 1 - prompt user with series re: criteria
   // PS 1.1 - prompt user with length 8-128
   // PS 1.2 - prompt user with lower, upper, special 
   // PS 2 - validate input
   // PS 3 - generate password
-  
 
-  return "Password TBD"
   // PS 4 - display  password on page. already done, with return line
   // shows that the event is connect and working. at the very end, need to return something, store generated passwork into a variable and return that. 
   }
 
 function promptAlert (){
+  choiceArray = [];
   characterLength = parseInt(prompt("How long should the password be? Please choose between 8-128 characters."));
   if (isNaN(characterLength)|| characterLength < 8 || characterLength > 128) {
     alert("Please enter character length as a number, between 8-128. Please try again.");
@@ -62,7 +71,6 @@ function promptAlert (){
     choiceArray = choiceArray.concat(numberArray);
   }
   return true;
-
 }
 // Don't touch above. Write all code below
 
