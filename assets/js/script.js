@@ -36,7 +36,7 @@ function generatePassword () {
   console.log("Click clack gurl");
   var password = "";
   for(var i = 0; i < characterLength; i++){
-     var randomCharacter = math.floor(math.random() * choiceArray.length);
+     var randomCharacter = Math.floor(Math.random() * choiceArray.length);
      password = password + choiceArray[randomCharacter];
   }
   return password;
