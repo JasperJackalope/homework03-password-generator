@@ -17,7 +17,7 @@ The user will be presented with a webpage featuring a prominent red button label
 
 ## Credits
 
-I must thanks Paul Keldsen and his YouTube video for walking me through the initial steps of the assignment, explaining exactly what I needed to look for in  my research. Next, thanks to W3 Schools and Mozilla Development Network for asnwering my questions and allowing me to search for the missing pieces. Finally, big ups to our TA Shawn and my fellow students for being there when needed. 
+I must thank Paul Keldsen and his YouTube video for walking me through the initial steps of the assignment, explaining exactly what I was doing, and pointing me in the right direction for my research. Next, thanks to W3 Schools and Mozilla Development Network for asnwering my questions and allowing me to search for the missing pieces. Finally, big ups to our TA Shawn and my fellow students for being there when needed. 
 
 ## License
 
@@ -26,4 +26,5 @@ Please refer to the LICENSE in the repository.
 ## Deloyed
 
 Github: https://github.com/JasperJackalope/homework03-password-generator
+
 Website: https://jasperjackalope.github.io/homework03-password-generator/
