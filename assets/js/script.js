@@ -9,6 +9,7 @@ var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", writePassword);
 
 function writePassword() {
+  console.log("Do you know the way to San Jose?")
   var truePrompts = promptAlert();
   var passwordText = document.querySelector("#password");
   if (truePrompts){
@@ -30,6 +31,7 @@ function generatePassword () {
   }
 
 function promptAlert (){
+  console.log("Wascally Wabbits")
   choiceArray = [];
   characterLength = parseInt(prompt("How long should the password be? Please choose between 8-128 characters."));
   if (isNaN(characterLength)|| characterLength < 8 || characterLength > 128) {
